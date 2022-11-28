@@ -1,0 +1,28 @@
+﻿namespace DesignPatterns.State;
+
+public class NoCash : State
+{
+    public NoCash(Context context) : base(context)
+    {
+    }
+
+    public override void InsertCard()
+    {
+        Console.WriteLine("Sorry, we are ouf of cash");
+    }
+
+    public override void EjectCard()
+    {
+        Console.WriteLine("Sorry, we are ouf of cash");
+    }
+
+    public override void InsertPin(int pin)
+    {
+        Console.WriteLine("Sorry, we are ouf of cash");
+    }
+
+    public override void WithdrawCash(int amount)
+    {
+        Console.WriteLine("Sorry, we are ouf of cash");
+    }
+}
